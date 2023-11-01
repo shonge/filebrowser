@@ -2,3 +2,4 @@
 !docker/*
 !docker_config.json
 !filebrowser
+!healthcheck.sh

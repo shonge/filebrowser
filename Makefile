@@ -14,7 +14,7 @@ build-frontend: ## Build frontend
 
 .PHONY: build-backend
 build-backend: ## Build backend
-	$Q $(go) build -ldflags '$(LDFLAGS)' -o .
+	$Q CGO_ENABLED=0 $(go) build -ldflags '$(LDFLAGS)' -o .
 
 .PHONY: test
 test: | test-frontend test-backend ## Run all tests
